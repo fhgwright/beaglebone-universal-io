@@ -9,6 +9,7 @@ SRC += cape-universalh-00A0.dts
 SRC += cape-univ-emmc-00A0.dts
 SRC += cape-univ-hdmi-00A0.dts
 SRC += cape-univ-audio-00A0.dts
+SRC += cape-univ-no-vayup-00A0.dts
 TARGET = config-pin
 
 all: ensure_path build
