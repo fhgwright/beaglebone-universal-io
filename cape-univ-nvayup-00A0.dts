@@ -16,6 +16,7 @@
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 //
 // This version hacked by Fred Wright to exclude Yantrr VAYU-P pins
+// Also adds TCLKIN support for P49.41
 
 /dts-v1/;
 /plugin/;
@@ -601,6 +602,8 @@
                 pinctrl-single,pins = <0x1b4  0x24>; };     /* Mode 4, Pull-Down, RxActive */
             P9_41_pruin_pin: pinmux_P9_41_pruin_pin {
                 pinctrl-single,pins = <0x1b4  0x25>; };     /* Mode 5, Pull-Down, RxActive */
+            P9_41_tclkin_pin: pinmux_P9_41_tclkin_pin {
+                pinctrl-single,pins = <0x1b4  0x32>; };     /* Mode 2, Pull-Up, RxActive */
 
             /* P9_41.1              */
             /* P9_91 (ZCZ ball D13) */
@@ -996,13 +999,14 @@
             P9_41_pinmux {
                 compatible = "bone-pinmux-helper";
                 status = "okay";
-                pinctrl-names = "default", "gpio", "gpio_pu", "gpio_pd", "timer", "pruin";
+                pinctrl-names = "default", "gpio", "gpio_pu", "gpio_pd", "timer", "pruin", "tclkin";
                 pinctrl-0 = <&P9_41_default_pin>;
                 pinctrl-1 = <&P9_41_gpio_pin>;
                 pinctrl-2 = <&P9_41_gpio_pu_pin>;
                 pinctrl-3 = <&P9_41_gpio_pd_pin>;
                 pinctrl-4 = <&P9_41_timer_pin>;
                 pinctrl-5 = <&P9_41_pruin_pin>;
+                pinctrl-6 = <&P9_41_tclkin_pin>;
             };
 
             P9_91_pinmux {

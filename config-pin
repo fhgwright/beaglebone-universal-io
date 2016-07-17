@@ -565,7 +565,7 @@ P9_40_CAPE="cape-bone-iio"
 P9_41_PRU="52"
 P9_41_GPIO="20"
 P9_41_PIN="gpio"
-P9_41_PINMUX="default gpio gpio_pu gpio_pd timer pruin"
+P9_41_PINMUX="default gpio gpio_pu gpio_pd timer pruin tclkin"
 P9_41_INFO="gpio0_20 default gpio0_20,pru:52 gpio0_20 gpio0_20 timer7 pr1_pru0_pru_r31_16"
 P9_41_CAPE="cape-universala cape-universal cape-universaln cape-universalh cape-univ-no-vayup"
 
